@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Najwa</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Fredoka:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffd6e0, #cde7ff);
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+
+    /* SHAPE LUCU */
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.3;
+    }
+
+    .b1 { width: 200px; height: 200px; background: #ff9ecb; top: -50px; left: -50px; }
+    .b2 { width: 150px; height: 150px; background: #a0c4ff; top: 200px; right: -50px; }
+    .b3 { width: 250px; height: 250px; background: #caffbf; bottom: -100px; left: 200px; }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-family: 'Fredoka', cursive;
+      color: #ff4d8d;
+      font-size: 32px;
+    }
+
+    header p {
+      color: #555;
+    }
+
+    header img {
+      width: 140px;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* CARD LUCU */
+    .card {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+    }
+
+    h2 {
+      color: #ff6b81;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    /* BUTTON LUCU */
+    .btn-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      margin: 5px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .pink { background: #ff8fab; color: white; }
+    .blue { background: #90dbf4; }
+    .green { background: #b9fbc0; }
+    .dark { background: #444; color: white; }
+
+  </style>
+</head>
+
+<body id="body">
+
+<!-- SHAPE -->
+<div class="bubble b1"></div>
+<div class="bubble b2"></div>
+<div class="bubble b3"></div>
+
+<header>
+  <h1>🌸 Najwa Nirwana Cadista 🌸</h1>
+  <p>Mahasiswa Teknik Pengolahan Limbah</p>
+  <img src="C:\Users\Najwa\Downloads\najwa.jpeg.jpeg">
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>💖 Data Diri</h2>
+    <p><b>Nama:</b> Najwa Nirwana Cadista</p>
+    <p><b>Tanggal Lahir:</b> 12 Juni 2006</p>
+    <p><b>Alamat:</b> Surabaya</p>
+    <p><b>Email:</b> cadistanajwa@gmail.com</p>
+    <p><b>Instagram:</b> @njljn</p>
+  </div>
+
+  <div class="card">
+    <h2>🎓 Pendidikan</h2>
+    <p>SMK Teknik PAL Surabaya</p>
+    <p>Politeknik Perkapalan Negeri Surabaya</p>
+  </div>
+
+  <div class="card">
+    <h2>✨ Pengalaman</h2>
+    <p>- Kepanitiaan KPU Prodi Teknik Pengolahan Limbah</p>
+    <p>- Volunteer Biships Mengajar</p>
+  </div>
+
+  <div class="card">
+    <h2>🌼 Organisasi</h2>
+    <p>HIMATEKPL - KOMINFO</p>
+  </div>
+
+  <div class="card">
+    <h2>🎨 Portfolio</h2>
+    <p>- Website sederhana</p>
+    <p>- Gambar teknik IPAL</p>
+  </div>
+
+  <div class="btn-container">
+    <h2>🎀 Ganti Tema</h2>
+    <button class="btn pink" onclick="changeBg('#ffd6e0')">Pink</button>
+    <button class="btn blue" onclick="changeBg('#cde7ff')">Blue</button>
+    <button class="btn green" onclick="changeBg('#d8f3dc')">Green</button>
+    <button class="btn dark" onclick="changeBg('#2c2c2c')">Dark</button>
+  </div>
+
+</div>
+
+<script>
+  function changeBg(color) {
+    document.getElementById("body").style.background = color;
+  }
+</script>
+
+</body>
+</html>
